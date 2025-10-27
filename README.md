@@ -1,9 +1,20 @@
-## UI Automation Test Used Cucumber (BDD) dan Playwright ##
-
-#### instalasi cucumber #### 
+## 🧪 UI Automation Test with Cucumber (BDD) & Playwright ##
+#### instalasi cucumber ####
+```bash
 npm install @cucumber/cucumber playwright @playwright/test chai --save-dev
 npx playwright install
+```
 #### Masuk ke dalam project ####
-cd ui_automation_test
+```bash
+cd "ui automation for coforge"
+```
 #### Jalankan project ####
-npx cucumber-js --require steps/**/*.js
+- all scenario : 
+```bash
+    npx cucumber-js --require steps
+```
+
+- 1 scenario : 
+```bash
+    npx cucumber-js features/checkout.feature --require steps
+```
