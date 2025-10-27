@@ -7,6 +7,7 @@ npx playwright install
 #### Masuk ke dalam project ####
 ```bash
 cd "ui automation for coforge"
+cd "soal no 2"
 ```
 #### Jalankan project ####
 - all scenario : 
