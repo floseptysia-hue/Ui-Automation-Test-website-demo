@@ -1,5 +1,5 @@
 Feature: Fitur Sort Produk
-  Sebagai pengguna, saya ingin mengurutkan produk agar saya bisa melihat produk berdasarkan harga
+  As a user, I want to sort the products by price so that I can easily find the cheapest or most expensive ones.
 
   Scenario: Sort products from lowest to highest price
     Given the user opens the SauceDemo login page

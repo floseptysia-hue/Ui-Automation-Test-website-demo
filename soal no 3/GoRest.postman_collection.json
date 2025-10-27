@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "4740110e-8a0c-44a5-9960-ee06bdf47488",
+		"name": "GoRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45507218",
+		"_collection_link": "https://wahyu-2267969.postman.co/workspace/Belajar-Psotman~385577d3-7643-4291-9aeb-9712fec5b7e4/collection/45507218-4740110e-8a0c-44a5-9960-ee06bdf47488?action=share&source=collection_link&creator=45507218"
+	},
+	"item": [
+		{
+			"name": "Get List",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"curl -i -H \"Accept:application/json\" -H \"Content-Type:application/json\" -H \"Authorization: Bearer ACCESS-TOKEN\" -XPOST \"https://gorest.co.in/public/v2/graphql\" -d '{\"query\":\"query{users {pageInfo {endCursor startCursor hasNextPage hasPreviousPage} totalCount nodes {id name email gender status}}}\"}'"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0559cb3b5791d319e95abb48090b31dc890ca76ee104f0ef19c1a12eca3ebd5d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/public/v2/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/public/v2/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "[\n    {\n        \"id\": 8209721,\n        \"name\": \"Msgr. Deveshwar Bhattathiri\",\n        \"email\": \"bhattathiri_deveshwar_msgr@goyette-hodkiewicz.test\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 8209720,\n        \"name\": \"Bhaumik Abbott MD\",\n        \"email\": \"md_abbott_bhaumik@bauch.example\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 8209718,\n        \"name\": \"Miss Giriraj Bharadwaj\",\n        \"email\": \"bharadwaj_giriraj_miss@mckenzie.test\",\n        \"gender\": \"female\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 8209717,\n        \"name\": \"Bhaaswar Bharadwaj\",\n        \"email\": \"bharadwaj_bhaaswar@gutkowski.example\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 8209716,\n        \"name\": \"Chaten Khatri\",\n        \"email\": \"khatri_chaten@wehner.example\",\n        \"gender\": \"female\",\n        \"status\": \"inactive\"\n    },\n    {\n        \"id\": 8209715,\n        \"name\": \"Chetan Patel Sr.\",\n        \"email\": \"chetan_patel_sr@osinski-breitenberg.test\",\n        \"gender\": \"female\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 8209714,\n        \"name\": \"Miss Tara Nayar\",\n        \"email\": \"miss_nayar_tara@white.test\",\n        \"gender\": \"female\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 8209713,\n        \"name\": \"Miss Sharda Pilla\",\n        \"email\": \"miss_pilla_sharda@becker.example\",\n        \"gender\": \"male\",\n        \"status\": \"inactive\"\n    },\n    {\n        \"id\": 8209712,\n        \"name\": \"Mohinder Menon\",\n        \"email\": \"menon_mohinder@borer.example\",\n        \"gender\": \"female\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 8209711,\n        \"name\": \"Agastya Prajapat\",\n        \"email\": \"agastya_prajapat@larkin.test\",\n        \"gender\": \"female\",\n        \"status\": \"active\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/public/v2/users/8209720",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"8209720"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Detail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/public/v2/users/8209720",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								"8209720"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n    \"id\": 8209720,\n    \"name\": \"Bhaumik Abbott MD\",\n    \"email\": \"md_abbott_bhaumik@bauch.example\",\n    \"gender\": \"male\",\n    \"status\": \"active\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0559cb3b5791d319e95abb48090b31dc890ca76ee104f0ef19c1a12eca3ebd5d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Tenali Ramakrishna\",\n    \"gender\": \"male\",\n    \"email\": \"gorest@gmail.com\",\n    \"status\": \"active\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/public/v2/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Tenali Ramakrishna\",\n    \"gender\": \"male\",\n    \"email\": \"tenali.ramakrishna@15ce.com\",\n    \"status\": \"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/public/v2/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n    \"id\": 8211536,\n    \"name\": \"Tenali Ramakrishna\",\n    \"email\": \"gorest@gmail.com\",\n    \"gender\": \"male\",\n    \"status\": \"active\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0559cb3b5791d319e95abb48090b31dc890ca76ee104f0ef19c1a12eca3ebd5d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Contoh update flo\",\n    \"email\": \"contoh-update@gmail.com\",\n    \"status\": \"active\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/public/v2/users/8209721",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"8209721"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update User",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Contoh update flo\",\n    \"email\": \"contoh-update@gmail.com\",\n    \"status\": \"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/public/v2/users/8209721",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								"8209721"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}

@@ -1,5 +1,5 @@
 Feature: Proses Checkout
-  Sebagai pengguna, saya ingin melakukan checkout produk agar saya bisa menyelesaikan pembelian
+  As a user, I want to complete the checkout process so that I can finalize my order
 
   Scenario: Complete checkout successfully
     Given the user has at least one item in the cart
