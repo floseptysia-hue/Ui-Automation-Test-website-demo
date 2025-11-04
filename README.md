@@ -19,7 +19,7 @@ cd "soal no 2"
 ```bash
     npx cucumber-js features/checkout.feature --require steps
 ```
-#### Apa saja yang aku kerjakan diatas?
+#### Apa saja yang saya kerjakan diatas?
 1. Go to https://www.saucedemo.com/ and create Gherkin scenario 
 2. Create the UI automation test with the following scenarios:
 - Sort product (at least one sort of filter)
