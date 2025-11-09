@@ -35,7 +35,7 @@ cd "soal no 2"
 ```
 
 📦 ui-api-automation-test/
- ┣ 📂 features/
+``` ┣ 📂 features/
  ┃ ┣ 📂 ui/
  ┃ ┃ ┣ 🧾 sort.feature
  ┃ ┃ ┗ 🧾 checkout.feature
@@ -58,7 +58,7 @@ cd "soal no 2"
  ┣ 📂 utils/
  ┃ ┗ apiClient.js
  ┣ cucumber.js
- ┗ package.json
+ ┗ package.json ```
 
 
 !! Notes 
@@ -67,7 +67,5 @@ cd "soal no 2"
 3. API scenarios are integrated to simulate end-to-end validation.
 
 
-
-
-```This project showcases my analytical and technical approach to automation testing — combining UI, API, and BDD methodologies.
+## This project showcases my analytical and technical approach to automation testing — combining UI, API, and BDD methodologies.
 Built with patience, curiosity, and a cup of ☕.
