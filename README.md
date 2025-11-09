@@ -35,7 +35,8 @@ cd "soal no 2"
 ```
 
 📦 ui-api-automation-test/
-``` ┣ 📂 features/
+```
+┣ 📂 features/
  ┃ ┣ 📂 ui/
  ┃ ┃ ┣ 🧾 sort.feature
  ┃ ┃ ┗ 🧾 checkout.feature
@@ -59,9 +60,9 @@ cd "soal no 2"
  ┃ ┗ apiClient.js
  ┣ cucumber.js
  ┗ package.json 
+```
 
-
-!! Notes 
+## ! Notes 
 1. Each scenario follows the BDD structure (Given–When–Then).
 2. POM (Page Object Model) is used for better test maintenance and scalability.
 3. API scenarios are integrated to simulate end-to-end validation.
