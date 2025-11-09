@@ -58,7 +58,7 @@ cd "soal no 2"
  ┣ 📂 utils/
  ┃ ┗ apiClient.js
  ┣ cucumber.js
- ┗ package.json ```
+ ┗ package.json 
 
 
 !! Notes 
